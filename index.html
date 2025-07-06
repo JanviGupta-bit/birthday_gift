@@ -35,21 +35,6 @@
       align-items: center;
       z-index: 2;
     }
-
-    .note {
-      font-size: 1.2rem;
-      color: #fff;
-      margin-bottom: 20px;
-      text-align: center;
-      animation: blink 1.5s infinite;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-
     .hammer {
       width: 60px;
       position: absolute;
@@ -59,12 +44,10 @@
       animation: hammerSwing 1.5s infinite;
       z-index: 2;
     }
-
     @keyframes hammerSwing {
       0%, 100% { transform: translateX(-50%) rotate(-30deg); }
       50% { transform: translateX(-50%) rotate(-50deg); }
     }
-
     .gift {
       cursor: pointer;
       width: 160px;
@@ -73,7 +56,6 @@
       animation: bounce 2s infinite;
       z-index: 1;
     }
-
     @keyframes bounce {
       0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -85,11 +67,9 @@
         transform: translateY(-10px);
       }
     }
-
     .gift:hover {
       transform: scale(1.1);
     }
-
     .birthday-card {
       display: none;
       text-align: center;
@@ -102,12 +82,10 @@
       max-width: 90%;
       z-index: 3;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.8); }
       to { opacity: 1; transform: scale(1); }
     }
-
     .confetti {
       position: absolute;
       width: 10px;
@@ -116,7 +94,6 @@
       animation: fall 3s linear infinite;
       z-index: 0;
     }
-
     @keyframes fall {
       to {
         transform: translateY(100vh) rotate(360deg);
@@ -127,19 +104,21 @@
 </head>
 <body>
   <!-- Background Music (optional) -->
-  <audio id="bg-music" src="bday-song.mp3" autoplay loop hidden></audio>
+  <audio id="bg-music" src="your-music.mp3" autoplay loop hidden></audio>
 
   <!-- Presenting Gift with Hammer -->
   <div class="present-wrapper">
-    <p class="note">Click on the below gift icon for a surprise</p>
     <img src="gift_icon.png" class="gift" id="giftBox" alt="Gift Box">
   </div>
 
   <!-- Birthday Card -->
   <div class="birthday-card" id="card">
-    <h1>🎉 Happy Birthday [Friend's Name]! 🎉</h1>
-    <p>Your sweet birthday message goes here. You can add anything you like ❤️</p>
-    <img src="your-photo.jpg" alt="Friend Pic" style="max-width: 100%; border-radius: 15px; margin-top: 20px;">
+    <h1>🎉 Happy Birthday [Tanishka(tanku)]! 🎉</h1>
+    <p>You’re truly a rare soul who deserves the best this world has to offer. I hope you achieve far more than you ever dream of, and make your 
+	family proud. Honestly, you’re the friend I never knew I needed—finding someone like you in this crazy corporate world is a blessing I’m so 
+	grateful for. Thank you for always being there, for listening to my endless nonsense, and for bringing the best food—seriously, you’re the real
+	star chef between us!LOVE YOU, BRO! ❤️✨❤️</p>
+    <img src="tanishka.jpg" alt="Us Together" style="max-width: 300px; border-radius: 15px; margin-top: 20px auto; display: block;">
   </div>
 
   <script>
@@ -165,6 +144,8 @@
       }
     }
   </script>
-
   <p style="display: none;">
-    Gift icon by <a href="https://www.flaticon.com/authors/dinosoftlabs" target="_blank">DinosoftLabs</a> on <a href="https://www.fla_
+    Gift icon by <a href="https://www.flaticon.com/authors/dinosoftlabs" target="_blank">DinosoftLabs</a> on <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
+  </p>
+</body>
+</html>
